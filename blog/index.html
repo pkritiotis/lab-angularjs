@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="pkBlog" ng-controller="MainPageController">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog</title>
+    <title>Page.title()</title>
 
     <!-- Bootstrap Core CSS -->
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -43,10 +43,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </head>
-<body ng-app="pkBlog">
-
+<body >
     <div ng-include src='"templates/header.html"'></div>
     <div ng-include src='"templates/navigation.html"'></div>
     <div ng-view>
